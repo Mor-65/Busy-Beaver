@@ -177,7 +177,17 @@ See also: `0210_0_`
 
 ### Irregular Counter — `121_000_`
 
-Computes a Collatz-like function that never halt.
+Computes a Collatz-like function that never halts:
+```txt
+A(x) = 0^x
+
+A(4x) -> A(6x) if x>0
+A(4x+1) -> A(6x) if x>0
+A(4x+2) -> A(6x+5)
+A(4x+3) -> A(6x+5)
+
+A(2) -> A(5) -> A(6) -> A(11) -> A(17) -> A(24) -> ...
+```
 
 ### Cycler — `110_20_2`
 
